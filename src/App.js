@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { ListView } from './ListView';
 import logo from './logo.svg';
 import './App.css';
 
@@ -14,6 +16,7 @@ class App extends Component {
             <h1>Oompa Loompa's Crew</h1>
           </div>
         </header>
+        <ListView />
       </div>
     );
   }
