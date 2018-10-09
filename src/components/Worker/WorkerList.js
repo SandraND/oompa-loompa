@@ -22,7 +22,7 @@ WorkerList.defaultProps = {
     workers: []
 };
 
-WorkerList.defaultProps = {
+WorkerList.propProps = {
     workers: PropTypes.array
 };
 
