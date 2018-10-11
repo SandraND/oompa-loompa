@@ -36,3 +36,18 @@ img {
   margin: 15px;
   margin-left: 30px;
 }
+
+
+.worker-card {
+  display: flex;
+  flex-direction:column;
+}
+
+.worker-img {
+  height: 200px;
+}
+
+.card {
+  
+  justify-content: space-around;
+}

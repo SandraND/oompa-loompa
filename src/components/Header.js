@@ -16,7 +16,7 @@ Header.defaultProps = {
     title: 'Title'
 };
 
-Header.PropTypes = {
+Header.propTypes = {
     title: PropTypes.string
 };
 

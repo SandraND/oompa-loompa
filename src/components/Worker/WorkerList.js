@@ -1,29 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import WorkerCard from './WorkerCard';
+import UUID from 'uuid';
 
-const getWorkers = (workers) => {
-    return(
-        <div className='card-deck'>
-            {
-                workers.map(worker => <WorkerCard key={worker.id} worker={worker} />)
-            }
-        </div>
-    );
-};
 
-const WorkerList = (props) => (
-    <div>
-        {getWorkers(props.workers)}
-    </div>
-);
-
-WorkerList.defaultProps = {
-    workers: []
-};
-
-WorkerList.propProps = {
-    workers: PropTypes.array
-};
+const WorkerList = (props) => {
+    const workerCard = props.workers.map((pic) => {
+        return(
+            <WorkerCard
+            key={UUID()}
+            url={pic}
+            />
+        );
+    });
+   return(
+       <ul>
+           {workerCard}
+       </ul>
+   ); 
+}
 
 export default WorkerList;
